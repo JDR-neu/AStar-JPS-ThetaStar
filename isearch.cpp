@@ -140,6 +140,7 @@ void ISearch::makePrimaryPath(Node curNode)
     lppath.push_front(current);
 }
 
+//只提取和记录转弯的点
 void ISearch::makeSecondaryPath()
 {
     std::list<Node>::const_iterator iter = lppath.begin();

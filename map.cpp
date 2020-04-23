@@ -32,6 +32,8 @@ bool Map::CellIsObstacle(int i, int j) const
     return (Grid[i][j] != CN_GC_NOOBS);
 }
 
+//map中点坐标(i,j)先行后列，相当于x轴朝下，y轴朝右
+
 bool Map::CellOnGrid(int i, int j) const
 {
     return (i < height && i >= 0 && j < width && j >= 0);
